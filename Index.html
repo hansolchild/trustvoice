@@ -19,7 +19,11 @@
             height: 100%;
             border: none;
         }
-    </style>
+    // 페이지 전체에서 마우스 우클릭 방지
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+</script>
 </head>
 <body>
     <!-- 전달해주신 GAS 주소 삽입 -->
